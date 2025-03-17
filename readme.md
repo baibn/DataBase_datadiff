@@ -6,7 +6,7 @@
 
 
 ```bash
-python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table users --keys id
+python /Users/******/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table users --keys id
  ```
 
 ```
@@ -15,7 +15,7 @@ python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db
 只比较特定列并添加 WHERE 条件：
 
 ```bash
-python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table orders --keys order_id --columns customer_id,total,status --where "created_at > '2023-01-01'"
+python /Users/******/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table orders --keys order_id --columns customer_id,total,status --where "created_at > '2023-01-01'"
  ```
 
 ```
@@ -24,7 +24,7 @@ python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db
 将比较结果保存为HTML报告：
 
 ```bash
-python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table products --keys product_id --output /Users/boningbai/baibn/Data_diff/reports/product_diff_report.html
+python /Users/******/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table products --keys product_id --output /Users/******/baibn/Data_diff/reports/product_diff_report.html
  ```
 
 ```
@@ -33,7 +33,7 @@ python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db
 如果不需要大模型分析，可以添加 --no-llm 标志：
 
 ```bash
-python /Users/boningbai/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table users --keys id --no-llm
+python /Users/******/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table users --keys id --no-llm
  ```
 
 ```
