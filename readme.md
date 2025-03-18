@@ -1,9 +1,8 @@
 ## 使用示例
 
+```
 ### 基本比较
-
 比较两个 SQLite 数据库中的 users 表，使用 id 列作为键：
-
 
 ```bash
 python /Users/******/baibn/Data_diff/src/main.py --db1 sqlite:///prod.db --db2 sqlite:///test.db --table users --keys id
